@@ -7,6 +7,7 @@
     <title>Project</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="shop.css"> 
+    <script src="javascript.js"></script> 
 </head>
 <body>
     
@@ -22,8 +23,7 @@
                 <li><a href="shop2.html"> Kids</a></li>
         <li><a href="about.html"> About</a></li>
         <li><a href="contact.html"> Contact</a></li>
-        <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i> </a></li>
-        <a href="#" id="close"><i class="far fa-times"></i></a>
+        
             
         
         </ul>
@@ -47,7 +47,7 @@
         
         <section id="product1" class="section-p1">
           <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct.html';">
+            <div class="pro" >
               <img src="img/products/men/clothes/Men Printed Hooded Neck Cotton Blend White, Black T-Shirt.webp">
         
               <div class="des">
@@ -62,7 +62,7 @@
                 </div>
                 <h4>Rs.499</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Printed Hooded Neck Cotton Blend White, Black T-Shirt', 499.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
            
         
@@ -80,9 +80,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.399</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Printed Round Neck Cotton Blend Black T-Shirt', 399.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -103,7 +103,7 @@
                 </div>
                 <h4>Rs.499</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Regular Fit Grey Lycra Blend Trousers', 499.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -123,9 +123,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.699</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Regular Fit Solid Button Down Collar Formal Shirt', 699.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -146,7 +146,7 @@
                 </div>
                 <h4>Rs.499</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Regular Fit Solid Spread Collar Formal Shirt', 499.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -164,9 +164,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.799</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Slim Fit Blue Cotton Blend Trousers', 799.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -184,9 +184,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.299</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Solid Black Track Pants', 299.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -203,9 +203,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.899</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Men Woven Design Polyester Straight Kurta  (Maroon)', 899.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -224,9 +224,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.999</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('AlphaBounce + Running Shoes For Men', 999.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
            
         
@@ -244,9 +244,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.899</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Flex Advantage 4.0 - Providen Walking Shoes For Men', 899.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -265,9 +265,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.1199</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('luft pace M Running Shoes For Men  (White)', 1199.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -287,9 +287,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.999</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('White Sports,Walking,Training,Gym,Stylish, Running Shoes Running Shoes For Men', 999.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -308,9 +308,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.1599</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('By Sonata Digital Watch - For Men', 1599.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -328,9 +328,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.899</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Neo Gents V Analog Watch - For Men', 899.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -348,9 +348,9 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <h4>Rs.499</h4>
+                <h4>Rs.699</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('RHETT Analog Watch - For Men', 699.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -369,7 +369,7 @@
                 </div>
                 <h4>Rs.499</h4>
               </div>
-              <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+              <a onclick="addToCart('Youth-Analog Analog Watch', 499.00)"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         
         
@@ -384,6 +384,15 @@
 
         
     </section> 
+
+
+    <aside id="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items">
+          <!-- Cart items go here -->
+      </ul>
+      <p>Total: Rs <span id="cart-total">0.00</span></p>
+  </aside>
         
         
         <section id="newsletter" class="section-p1 section-m1">
@@ -418,22 +427,14 @@
         
           <div class="col">
             <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Privacy policy</a>
+            <a href="contact.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
           </div>
           
         
-          <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
-          </div>
+          
         
           
         
@@ -443,6 +444,6 @@
         </footer>
         
 
-
+        <script src="javascript.js"></script> 
 </body>
 </html>

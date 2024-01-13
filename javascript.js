@@ -1,19 +1,37 @@
-const bar= document.getElementById("bar");
-const close= document.getElementById("close");
-const nav=  document.getElementById("navbar");
+let cart = [];
 
-if(bar){
-    bar.addEventListener("click",()=>{
-        nav.classList.add("active");
+function addToCart(productName, price) {
+    const item = {
+        name: productName,
+        price: price
+    };
 
-    });
+    cart.push(item);
+    updateCart();
 }
 
-if(close){
-    close.addEventListener("click",()=>{
-        nav.classList.remove("active");
+function updateCart() {
+    const cartList = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
 
+    // Clear the cart list
+    cartList.innerHTML = '';
+
+    let totalAmount = 0;
+
+    // Populate the cart list and calculate the total amount
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ${item.price.toFixed(2)}`;
+
+        cartList.appendChild(listItem);
+
+        // Add the price to the total amount
+        totalAmount += item.price;
     });
+
+    // Display the total amount
+    cartTotal.textContent = `${totalAmount.toFixed(2)}`;
 }
 
   
